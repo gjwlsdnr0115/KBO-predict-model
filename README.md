@@ -1,1 +1,1 @@
-# KBO-predict-model
+# Baseball-predict-model
