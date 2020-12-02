@@ -25,20 +25,12 @@ Predicting ERA, match winner of each game in the KBO League
 
 ## 3. Model training
 
-**KoBERT tokenizer + Word2Vec + cosine-similarity**\
-[Model train file (wv_model_train.ipynb)](./Model/wv_model_train.ipynb)
+**XGBoost + Bayesian Optimization**\
+[ERA Predict Model](./model_era.ipynb)\
+[Win Predict Model](./model_win.ipynb)
 
-**KoBERT tokenizer:** Developed by SKTBrain\
-**Word2Vec:** Represents words in vectors
+### Bayesian Optimization
 
-**Model parameters:**\
-vector dimension = 300, window = 8
-
-**Model** [(Architecture.ipynb)](./Model/Architecture.ipynb)
-- Added all word vectors in a news data to make a news representation
-- Generated each theme representations by adding all 200 news representations
-- Normalization was not necessary since more information leads to accurate representations
-- When a news data is given as input, the model will vectorize the data and use cosine-similarity to determine and return the most similar theme
 
 ## 4. Testing
 **Model**
