@@ -1,12 +1,11 @@
-# Baseball-predict-model
-Using Python and NLP, predicting stock themes with high potential based on news data
+# KBO: Predicting Baseball
+Predicting ERA, match winner of each game in the KBO League
 
 ## Summary
-* Used news data from 'Naver'
-* Gathered meaningful stock themes mentioned in everyday news over the last year
-* Gathered 200 news data for each stock theme
-* Trained with word2vec model
-* Used cosine-similarity to predict theme
+* Data from KBO, open source
+* Selected meaningful player stats/features in predicting game results.
+* Processed dataset by each game/starting players
+* Trained model with XGBoost, Bayesian Optimization
 
 ## 1. Background
 ### What is thematic investing?
