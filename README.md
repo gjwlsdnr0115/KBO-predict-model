@@ -8,14 +8,9 @@ Predicting ERA, match winner of each game in the KBO League
 * Trained model with XGBoost, Bayesian Optimization
 
 ## 1. Background
-### What is thematic investing?
-* Thematic investing is a form of investment which aims to identify macro-level trends, and the underlying investments that stand to benefit from the materialisation of those trends
-* A stock theme is a particular group of stocks that share a similar trend or trait
-
-### Hypothesis
-1. Individual investers are limited in obtaining information and therfore, rely on the news for such information. As a result, stock themes and the news have a strong correlation.
-2. When an event occurs in the news regarding a particular stock theme, some time must pass by for a noticable change to happen for that stock theme's price.
-3. If a particular stock theme is mentioned too much in the news, its price will already be affected.
+### Why predict baseball?
+* Baseball is one of the first sports to incorporate statistics, and is widely known for its usage of numbers and data when making decisions.
+* By analyzing underlying correlatins and implementing Machine Learning, it could be possible to predict the result of a baseball game.
 
 ## 2. Data preprocessing
 Crawling Naver news data using Beautifulsoup
