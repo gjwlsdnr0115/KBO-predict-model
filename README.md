@@ -10,13 +10,12 @@ Predicting ERA, match winner of each game in the KBO League
 ## 1. Background
 ### Why predict baseball?
 * Baseball is one of the first sports to incorporate statistics, and is widely known for its usage of numbers and data when making decisions.
-* By analyzing underlying correlatins and implementing Machine Learning, it could be possible to predict the result of a baseball game.
+* By analyzing underlying correlations and implementing Machine Learning, it could be possible to predict the result of a baseball game.
 
 ## 2. Data preprocessing
-Crawling Naver news data using Beautifulsoup
+1. Process the accumulated stats of each player for each game of the season
+2. Processed data by each game, in which the columns are the stats of all of the starting players
 
-1. **Stock themes:** Searched stock themes that were frequently mentioned in the news. Removed themes that were fewly referenced or were too specific in its meaning to be useful. A total of 168 themes were finalized. Each theme consists a list of corporations belonging to that theme.
-2. **News data:** 200 news data were crawled for each of the 168 themes. Unusable data(photo news, video news) were manually removed from the dataset.
 
 ## 3. Model training
 
