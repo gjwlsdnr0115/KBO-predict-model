@@ -31,20 +31,28 @@ Predicting ERA, match winner of each game in the KBO League
 
 ### Bayesian Optimization
 
+- Searches the best parameters within the specified range
+- ex)
+
+
+  ```
+  XGB_BO = BayesianOptimization(XGB_CV, {
+                                      'max_depth': (2, 12),
+                                      'gamma': (0.001, 10.0),
+                                      'min_child_weight': (0, 20),
+                                      'max_delta_step': (0, 10),
+                                      'subsample': (0.4, 1.0),
+                                      'colsample_bytree' :(0.4, 1.0),
+                                      'eta' : (0.01, 0.3)
+                                      })
+  ```
 
 ## 4. Testing
-**Model**
-- **Input:** Today news(approximately 2000 data each for IT, economy, society, lifestyle, international, politics)
-- **Output:** A list of themes and its subordinate corporations that are considered to have high potential
-- The model finds a similar theme for each news data and counts the number of its appearance. However, it only counts when the similarity is higher than 95%.
-- When all of the input data is processed, the model generates a list of themes, whose count is less than 5(hypothesis 3).
+**ERA**
+- RMSE: 2.858035
+- R2: 0.021920
 
-**Market testing**
-- Select one corporation for each theme, whose fluctuation is less than 5% and has the highest market capitalization.
-- Calculate profit with the following rules.
-  - Sell when a stock's price increases more than 10%
-  - Sell when a stock's price decreases more than 5%
-  - If neither of above, sell after 5 days of purchase
-  
-**Result**
+**WIN**
+- Score: 0.5787671232876712
+
 
