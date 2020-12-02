@@ -13,8 +13,9 @@ Predicting ERA, match winner of each game in the KBO League
 * By analyzing underlying correlations and implementing Machine Learning, it could be possible to predict the result of a baseball game.
 
 ## 2. Data preprocessing
-1. Process the accumulated stats of each player for each game of the season
-2. Processed data by each game, in which the columns are the stats of all of the starting players
+1. Process the accumulated stats of each player for each game of the season [notebook](./data/individual_player_stats.ipynb)
+2. Processed data by each game, in which the columns are the stats of all of the starting players [notebook](./data/starting_stats.ipynb)
+3. Finalized training data - stats of both Home and Away team's starting players for each match-up [notebook](./data/create_dataset.ipynb)
 
 
 ## 3. Model training
