@@ -1,4 +1,4 @@
-# KBO: Predicting Baseball
+# KBO: Predict Baseball
 Predicting ERA, match winner of each game in the KBO League
 
 ## Summary
